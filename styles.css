@@ -1,12 +1,16 @@
+body{
+  margin:0;
+}
 /* Navigation Bar */
 nav{
     display: flex;
     justify-content: space-between;
-    background-color:dimgrey;
+    background-color:#696969;
     color:aliceblue;
     height: 100px;
     align-items: center;
     border-radius: 30px;
+    width:100%;
 }
 
 #nav-links{
@@ -27,6 +31,43 @@ nav{
     border-radius: 50%;
     height: 50px;
     margin-left: 40px;
+}
+
+/* Footer */
+
+footer{
+  background-color: #696969;
+  height: 100px;
+  position: fixed;
+  bottom:0;
+  border-radius: 30px;
+  left:0;
+  width:100%;
+  justify-self: center;
+}
+
+footer ul{
+  display:flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top:15px;
+  padding-left: 0;
+}
+
+#footer-links li a{
+  align-self: center;
+}
+
+#footer-links li a img{
+  list-style-type: none;
+  height:50px;
+  /* padding-top: 25px; */
+}
+/* quick fix for square image */
+#X{
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 650px){
